@@ -1,7 +1,7 @@
 {
   "name": "bitflyer-api-client",
   "description": "Bitflyer API client for Node.js",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
