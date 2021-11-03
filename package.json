@@ -72,19 +72,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TomokiMiyauci/bitbank-client.git"
+    "url": "https://github.com/TomokiMiyauci/bitflyer-client.git"
   },
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/TomokiMiyauci/bitbank-client#readme",
-  "bugs": "https://github.com/TomokiMiyauci/bitbank-client/issues",
+  "homepage": "https://github.com/TomokiMiyauci/bitflyer-client#readme",
+  "bugs": "https://github.com/TomokiMiyauci/bitflyer-client/issues",
   "funding": {
     "type": "patreon",
     "url": "https://www.patreon.com/tomoki_miyauci"
   },
   "keywords": [
-    "bitbank"
+    "bitflyer"
   ],
   "lint-staged": {
     "*.{ts,tsx,js}": [
