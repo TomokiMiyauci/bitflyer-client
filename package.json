@@ -1,5 +1,5 @@
 {
-  "name": "bitflyer-client",
+  "name": "bitflyer-api-client",
   "description": "Bitflyer API client for Node.js",
   "version": "1.0.0-beta.1",
   "main": "dist/index.cjs.js",

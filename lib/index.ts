@@ -1,3 +1,3 @@
 export * from '@/api/public'
-export * from '@/constants/pair'
+export * from '@/constants'
 export * from '@/shared/types/currency'
