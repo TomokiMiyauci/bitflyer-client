@@ -1,5 +1,5 @@
 {
-  "name": "bitflyer-api-client",
+  "name": "@coinset/bitflyer",
   "description": "Bitflyer API client for Node.js",
   "version": "1.0.0-beta.1",
   "main": "dist/index.cjs.js",
@@ -72,13 +72,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TomokiMiyauci/bitflyer-client.git"
+    "url": "https://github.com/coinset/bitflyer.git"
   },
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/TomokiMiyauci/bitflyer-client#readme",
-  "bugs": "https://github.com/TomokiMiyauci/bitflyer-client/issues",
+  "homepage": "https://github.com/coinset/bitflyer#readme",
+  "bugs": "https://github.com/coinset/bitflyer/issues",
   "funding": {
     "type": "patreon",
     "url": "https://www.patreon.com/tomoki_miyauci"
