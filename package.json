@@ -11,6 +11,9 @@
       "import": "./dist/index.es.js"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "commit": "cz",
     "prepare": "husky install",
