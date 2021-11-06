@@ -3,14 +3,14 @@ import { jsonFetch } from '@/shared/fetch'
 import type { BitflyerPair } from '@/shared/types/currency'
 import type { PublicAPI } from '@/shared/types/fetch'
 
-import type { State } from '@/shared/types'
+import type { Health } from '@/shared/types'
 
 type HealthOptions = {
   productCode: BitflyerPair
 }
 
 type HealthResponse = {
-  status: State
+  status: Health
 }
 
 const fetchHealth: PublicAPI<HealthOptions, HealthResponse> = (
@@ -19,9 +19,7 @@ const fetchHealth: PublicAPI<HealthOptions, HealthResponse> = (
 ) => {
   const url = new URL(GETHEALTH, BASE_URL)
 
-  url.search = new URLSearchParams({
-    product_code: productCode
-  }).toString()
+  url.searchParams.set('product_code', productCode)
 
   return jsonFetch(url, init)
 }

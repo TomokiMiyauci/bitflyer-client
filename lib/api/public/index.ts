@@ -16,5 +16,8 @@ export type {
   ExecutionsResponse
 } from '@/api/public/executions'
 
-export * from '@/api/public/health'
-export * from '@/api/public/markets'
+export { fetchHealth } from '@/api/public/health'
+export type { HealthOptions, HealthResponse } from '@/api/public/health'
+
+export { fetchMarkets } from '@/api/public/markets'
+export type { MarketsResponse } from '@/api/public/markets'

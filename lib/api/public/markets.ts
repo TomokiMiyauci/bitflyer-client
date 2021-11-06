@@ -38,3 +38,4 @@ const fetchMarkets: SimplePublicAPI<MarketsOptions, MarketsResponse> = (
 }
 
 export { fetchMarkets }
+export type { MarketsResponse }
