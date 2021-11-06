@@ -37,9 +37,7 @@ const fetchExecutions: PublicAPI<ExecutionsOptions, ExecutionsResponse> = (
 ) => {
   const url = new URL(EXECUTIONS, BASE_URL)
 
-  url.search = new URLSearchParams({
-    product_code: productCode
-  }).toString()
+  url.searchParams.set('product_code', productCode)
 
   return jsonFetch(url, init, { parseJson: reviver })
 }

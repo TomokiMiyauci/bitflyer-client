@@ -10,6 +10,11 @@ export type {
   BoardStateResponse
 } from '@/api/public/board_state'
 
-export * from '@/api/public/executions'
+export { fetchExecutions } from '@/api/public/executions'
+export type {
+  ExecutionsOptions,
+  ExecutionsResponse
+} from '@/api/public/executions'
+
 export * from '@/api/public/health'
 export * from '@/api/public/markets'
