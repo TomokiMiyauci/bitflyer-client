@@ -23,9 +23,7 @@ const fetchBoardState: PublicAPI<BoardStateOptions, BoardStateResponse> = (
 ) => {
   const url = new URL(GETBOARDSTATE, BASE_URL)
 
-  url.search = new URLSearchParams({
-    product_code: productCode
-  }).toString()
+  url.searchParams.set('product_code', productCode)
 
   return jsonFetch(url, init)
 }

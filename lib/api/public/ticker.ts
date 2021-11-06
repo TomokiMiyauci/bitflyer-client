@@ -47,9 +47,7 @@ const fetchTicker: PublicAPI<TickerOptions, TickerResponse> = (
 ) => {
   const url = new URL(TICKER, BASE_URL)
 
-  url.search = new URLSearchParams({
-    product_code: productCode
-  }).toString()
+  url.searchParams.set('product_code', productCode)
 
   return jsonFetch(url, init, { parseJson: reviver })
 }
