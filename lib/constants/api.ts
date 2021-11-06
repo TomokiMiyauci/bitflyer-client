@@ -1,0 +1,10 @@
+export const BASE_URL = 'https://api.bitflyer.com/v1/'
+
+export const MARKETS = 'markets'
+export const TICKER = 'ticker'
+export const TRANSITIONS = 'transactions'
+export const BOARD = 'board'
+export const EXECUTIONS = 'executions'
+export const GETBOARDSTATE = 'getboardstate'
+export const GETHEALTH = 'gethealth'
+export const GETCHATS = 'getchats'
