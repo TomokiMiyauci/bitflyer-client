@@ -1,16 +1,20 @@
 import type { StrictExtract } from '@/utils/types'
-import type { All_Pairs, BTC, JPY } from 'cryptocurrency-types'
+import type {
+  BTC,
+  JPY,
+  XRP,
+  ETH,
+  XLM,
+  MONA,
+  BCH,
+  Pair
+} from 'cryptocurrency-types'
 
-type BitflyerSpotPair = StrictExtract<
-  All_Pairs,
-  | 'BTC_JPY'
-  | 'XRP_JPY'
-  | 'ETH_JPY'
-  | 'XLM_JPY'
-  | 'MONA_JPY'
-  | 'ETH_BTC'
-  | 'BCH_BTC'
->
+type BitflyerSymbol = BTC | XRP | ETH | XLM | MONA | BCH
+
+type BitflyerSpotPair =
+  | Pair<StrictExtract<BitflyerSymbol, BTC | XRP | ETH | XLM | MONA>, JPY>
+  | Pair<ETH | BCH, BTC>
 
 type BitflyerFXPair = `FX_${BTC}_${JPY}`
 
