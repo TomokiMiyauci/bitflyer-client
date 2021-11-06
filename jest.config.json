@@ -10,5 +10,8 @@
   "clearMocks": true,
   "collectCoverage": true,
   "coverageDirectory": "<rootDir>/coverage",
-  "setupFilesAfterEnv": ["jest-extended/all"]
+  "setupFilesAfterEnv": [
+    "jest-extended/all",
+    "<rootDir>/tests/setup/setup_files_after_env.ts"
+  ]
 }
