@@ -1,0 +1,45 @@
+{
+  "module": "./esm/mod.js",
+  "main": "./umd/mod.js",
+  "types": "./types/mod.d.ts",
+  "name": "@coinset/bitflyer",
+  "description": "Universal Bitflyer API client",
+  "license": "MIT",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "TomokiMiyauci",
+    "email": "contact@miyauchi.dev",
+    "url": "https://miyauchi.dev/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coinset/bitflyer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coinset/bitflyer/issues"
+  },
+  "homepage": "https://github.com/coinset/bitflyer#readme",
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/tomoki_miyauci"
+  },
+  "keywords": [
+    "bitflyer"
+  ],
+  "exports": {
+    ".": {
+      "import": "./esm/mod.js",
+      "require": "./umd/mod.js",
+      "types": "./types/mod.d.ts"
+    }
+  },
+  "dependencies": {
+    "deno.ns": "0.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.1"
+  }
+}
